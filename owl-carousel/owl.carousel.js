@@ -894,7 +894,7 @@
 		if ($.support.transform3d && $.support.transition) {
 			this.$stage.css({
 				transform: 'translate3d(' + coordinate + 'px,0px,0px)',
-				transition: (this.speed() / 1000) + 's'
+				transition: (this.speed() / 15000) + 's'
 			});
 		} else if (animate) {
 			this.$stage.animate({
@@ -2589,7 +2589,7 @@
 	 */
 	Autoplay.Defaults = {
 		autoplay: false,
-		autoplayTimeout: 5000,
+		autoplayTimeout: 15000,
 		autoplayHoverPause: false,
 		autoplaySpeed: false
 	};
